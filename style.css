@@ -1147,11 +1147,6 @@ footer small {
 
 }
 
-
-/* =========================================
-   MOBILE NAVIGATION
-   ========================================= */
-
 @media (max-width: 900px) {
 
     .mobile-menu-button {
@@ -1204,11 +1199,6 @@ footer small {
     }
 
 }
-
-
-/* =========================================
-   REDUCED MOTION
-   ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
