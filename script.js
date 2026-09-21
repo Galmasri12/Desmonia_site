@@ -1,11 +1,4 @@
-/* =========================================
-   DESMONIA INTERACTIVE JAVASCRIPT
-   ========================================= */
 
-
-/* =========================================
-   1. MOBILE NAVIGATION
-   ========================================= */
 
 const navbar = document.querySelector(".navbar");
 const nav = document.querySelector(".navbar nav");
@@ -51,10 +44,6 @@ navLinks.forEach(link => {
 });
 
 
-/* =========================================
-   2. SCROLL REVEAL ANIMATION
-   ========================================= */
-
 const animatedElements = document.querySelectorAll(
     ".section-title, .about-container, .schedule-card, .shop-card, .social-section"
 );
@@ -94,9 +83,6 @@ animatedElements.forEach(element => {
 });
 
 
-/* =========================================
-   3. NAVBAR SCROLL EFFECT
-   ========================================= */
 
 window.addEventListener("scroll", () => {
 
@@ -112,10 +98,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-
-/* =========================================
-   6. CLICK PARTICLES
-   ========================================= */
+//Click particle effect
 
 document.addEventListener("click", (event) => {
 
@@ -142,9 +125,6 @@ document.addEventListener("click", (event) => {
 });
 
 
-/* =========================================
-   7. BACK TO TOP BUTTON
-   ========================================= */
 
 const backToTop = document.createElement("button");
 
