@@ -114,89 +114,6 @@ window.addEventListener("scroll", () => {
 
 
 /* =========================================
-   4. QUEEN'S MESSAGE
-   ========================================= */
-
-const queenMessages = [
-
-    "The Queen is watching... 👑",
-
-    "Welcome to Desmonia, little creature. 🦇",
-
-    "The night is open. 🌙",
-
-    "Try not to get eaten. ♥",
-
-    "You have entered the Queen's domain.",
-
-    "Your soul has been added to the kingdom. ☠",
-
-    "The Queen approves of your presence. ✦"
-
-];
-
-
-function summonQueen() {
-
-    const message =
-        queenMessages[
-            Math.floor(Math.random() * queenMessages.length)
-        ];
-
-
-    const notification = document.createElement("div");
-
-    notification.classList.add("queen-message");
-
-    notification.textContent = message;
-
-
-    document.body.appendChild(notification);
-
-
-    setTimeout(() => {
-
-        notification.classList.add("show");
-
-    }, 50);
-
-
-    setTimeout(() => {
-
-        notification.classList.remove("show");
-
-        setTimeout(() => {
-
-            notification.remove();
-
-        }, 500);
-
-    }, 3000);
-
-}
-
-
-/* =========================================
-   5. MAKE BUTTONS SUMMON THE QUEEN
-   ========================================= */
-
-const buttons = document.querySelectorAll(
-    ".primary-button, .secondary-button, .text-button"
-);
-
-
-buttons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        summonQueen();
-
-    });
-
-});
-
-
-/* =========================================
    6. CLICK PARTICLES
    ========================================= */
 
@@ -267,20 +184,5 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
 
     });
-
-});
-
-
-/* =========================================
-   8. DESMONIA WELCOME MESSAGE
-   ========================================= */
-
-window.addEventListener("load", () => {
-
-    setTimeout(() => {
-
-        summonQueen();
-
-    }, 1200);
 
 });
